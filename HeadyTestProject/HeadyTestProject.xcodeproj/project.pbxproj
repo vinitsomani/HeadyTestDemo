@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		53D0F6092094789500D67F73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D0F6082094789500D67F73 /* AppDelegate.swift */; };
-		53D0F60B2094789500D67F73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D0F60A2094789500D67F73 /* ViewController.swift */; };
 		53D0F60E2094789500D67F73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53D0F60C2094789500D67F73 /* Main.storyboard */; };
 		53D0F6102094789500D67F73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53D0F60F2094789500D67F73 /* Assets.xcassets */; };
 		53D0F6132094789500D67F73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53D0F6112094789500D67F73 /* LaunchScreen.storyboard */; };
+		53D0F61F2094E8F600D67F73 /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D0F61E2094E8F600D67F73 /* CategoryVC.swift */; };
+		53D0F6212094E98E00D67F73 /* HeadyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D0F6202094E98E00D67F73 /* HeadyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		53D0F6052094789500D67F73 /* HeadyTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadyTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D0F6082094789500D67F73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		53D0F60A2094789500D67F73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		53D0F60D2094789500D67F73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53D0F60F2094789500D67F73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53D0F6122094789500D67F73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53D0F6142094789500D67F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53D0F61E2094E8F600D67F73 /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
+		53D0F6202094E98E00D67F73 /* HeadyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		53D0F6072094789500D67F73 /* HeadyTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				53D0F61D2094E89400D67F73 /* CategoryVCScene */,
+				53D0F61A2094E54A00D67F73 /* Models */,
 				53D0F6082094789500D67F73 /* AppDelegate.swift */,
-				53D0F60A2094789500D67F73 /* ViewController.swift */,
 				53D0F60C2094789500D67F73 /* Main.storyboard */,
 				53D0F60F2094789500D67F73 /* Assets.xcassets */,
 				53D0F6112094789500D67F73 /* LaunchScreen.storyboard */,
 				53D0F6142094789500D67F73 /* Info.plist */,
 			);
 			path = HeadyTestProject;
+			sourceTree = "<group>";
+		};
+		53D0F61A2094E54A00D67F73 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53D0F6202094E98E00D67F73 /* HeadyViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		53D0F61D2094E89400D67F73 /* CategoryVCScene */ = {
+			isa = PBXGroup;
+			children = (
+				53D0F61E2094E8F600D67F73 /* CategoryVC.swift */,
+			);
+			path = CategoryVCScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53D0F60B2094789500D67F73 /* ViewController.swift in Sources */,
+				53D0F61F2094E8F600D67F73 /* CategoryVC.swift in Sources */,
 				53D0F6092094789500D67F73 /* AppDelegate.swift in Sources */,
+				53D0F6212094E98E00D67F73 /* HeadyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
