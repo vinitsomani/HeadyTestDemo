@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol CategoryVCTableCellDelegate: NSObjectProtocol{
+func CategoryCellSelectedID(categoryID: Int)
+}
+
 class CategoryVCTableCell: UITableViewCell {
 
     @IBOutlet weak var collectinView: UICollectionView!
@@ -16,7 +20,7 @@ class CategoryVCTableCell: UITableViewCell {
     fileprivate var categories: Categories!
     
     fileprivate let cellIdentifier = "CollectionCell"
-    
+    weak var delegate: CategoryVCTableCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -67,7 +71,7 @@ extension CategoryVCTableCell: UICollectionViewDataSource{
 
 extension CategoryVCTableCell: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        delegate?.CategoryCellSelectedID(categoryID: (categories?.child_categories[indexPath.row])!)
     }
 }
 

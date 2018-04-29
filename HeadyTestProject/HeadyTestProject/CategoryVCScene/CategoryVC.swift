@@ -66,6 +66,7 @@ extension CategoryVC: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.categoryTable.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CategoryVCTableCell
+        cell.delegate = self as CategoryVCTableCellDelegate
         cell.selectionStyle = .none;
         cell.setCellCategoryData(categories: parentCategories[indexPath.row])
         
@@ -73,4 +74,14 @@ extension CategoryVC: UITableViewDataSource{
     }
 }
 
+extension CategoryVC: CategoryVCTableCellDelegate{
+    func CategoryCellSelectedID(categoryID: Int) {
+       let category = HeadyModelFilterClass.sharedFilter.getHeadyCategoryOfID(categoryId: categoryID)
+        let subCategoryController = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "SubCategoryVC") as! SubCategoryVC
+        subCategoryController.category = category
+        self.navigationController?.pushViewController(subCategoryController, animated: true)
+    }
+    
+    
+}
 

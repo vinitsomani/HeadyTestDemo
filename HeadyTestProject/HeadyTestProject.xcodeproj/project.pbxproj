@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5388F00F20963384001D3348 /* SubCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5388F00E20963384001D3348 /* SubCategoryVC.swift */; };
 		53D0F6092094789500D67F73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D0F6082094789500D67F73 /* AppDelegate.swift */; };
 		53D0F60E2094789500D67F73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53D0F60C2094789500D67F73 /* Main.storyboard */; };
 		53D0F6102094789500D67F73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53D0F60F2094789500D67F73 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5388F00E20963384001D3348 /* SubCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryVC.swift; sourceTree = "<group>"; };
 		53D0F6052094789500D67F73 /* HeadyTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadyTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D0F6082094789500D67F73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53D0F60D2094789500D67F73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5388F00D2096334A001D3348 /* SubCategoryVCScene */ = {
+			isa = PBXGroup;
+			children = (
+				5388F00E20963384001D3348 /* SubCategoryVC.swift */,
+			);
+			path = SubCategoryVCScene;
+			sourceTree = "<group>";
+		};
 		53D0F5FC2094789500D67F73 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 		53D0F6072094789500D67F73 /* HeadyTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				5388F00D2096334A001D3348 /* SubCategoryVCScene */,
 				53D0F61D2094E89400D67F73 /* CategoryVCScene */,
 				53D0F61A2094E54A00D67F73 /* Models */,
 				53D0F6082094789500D67F73 /* AppDelegate.swift */,
@@ -170,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53D0F6282095B14400D67F73 /* CategoryCollectionCell.swift in Sources */,
+				5388F00F20963384001D3348 /* SubCategoryVC.swift in Sources */,
 				53D0F61F2094E8F600D67F73 /* CategoryVC.swift in Sources */,
 				53D0F6092094789500D67F73 /* AppDelegate.swift in Sources */,
 				53D0F62420958C7500D67F73 /* CategoryVCTableCell.swift in Sources */,
