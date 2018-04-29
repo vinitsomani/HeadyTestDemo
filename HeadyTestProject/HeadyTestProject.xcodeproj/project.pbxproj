@@ -13,6 +13,10 @@
 		53D0F6132094789500D67F73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53D0F6112094789500D67F73 /* LaunchScreen.storyboard */; };
 		53D0F61F2094E8F600D67F73 /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D0F61E2094E8F600D67F73 /* CategoryVC.swift */; };
 		53D0F6212094E98E00D67F73 /* HeadyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D0F6202094E98E00D67F73 /* HeadyViewModel.swift */; };
+		53D0F62420958C7500D67F73 /* CategoryVCTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D0F62220958C7500D67F73 /* CategoryVCTableCell.swift */; };
+		53D0F62520958C7500D67F73 /* CategoryVCTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53D0F62320958C7500D67F73 /* CategoryVCTableCell.xib */; };
+		53D0F6282095B14400D67F73 /* CategoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D0F6262095B14400D67F73 /* CategoryCollectionCell.swift */; };
+		53D0F6292095B14400D67F73 /* CategoryCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53D0F6272095B14400D67F73 /* CategoryCollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		53D0F6142094789500D67F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53D0F61E2094E8F600D67F73 /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
 		53D0F6202094E98E00D67F73 /* HeadyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadyViewModel.swift; sourceTree = "<group>"; };
+		53D0F62220958C7500D67F73 /* CategoryVCTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVCTableCell.swift; sourceTree = "<group>"; };
+		53D0F62320958C7500D67F73 /* CategoryVCTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryVCTableCell.xib; sourceTree = "<group>"; };
+		53D0F6262095B14400D67F73 /* CategoryCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionCell.swift; sourceTree = "<group>"; };
+		53D0F6272095B14400D67F73 /* CategoryCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				53D0F61E2094E8F600D67F73 /* CategoryVC.swift */,
+				53D0F62220958C7500D67F73 /* CategoryVCTableCell.swift */,
+				53D0F62320958C7500D67F73 /* CategoryVCTableCell.xib */,
+				53D0F6262095B14400D67F73 /* CategoryCollectionCell.swift */,
+				53D0F6272095B14400D67F73 /* CategoryCollectionCell.xib */,
 			);
 			path = CategoryVCScene;
 			sourceTree = "<group>";
@@ -144,6 +156,8 @@
 			files = (
 				53D0F6132094789500D67F73 /* LaunchScreen.storyboard in Resources */,
 				53D0F6102094789500D67F73 /* Assets.xcassets in Resources */,
+				53D0F62520958C7500D67F73 /* CategoryVCTableCell.xib in Resources */,
+				53D0F6292095B14400D67F73 /* CategoryCollectionCell.xib in Resources */,
 				53D0F60E2094789500D67F73 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -155,8 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53D0F6282095B14400D67F73 /* CategoryCollectionCell.swift in Sources */,
 				53D0F61F2094E8F600D67F73 /* CategoryVC.swift in Sources */,
 				53D0F6092094789500D67F73 /* AppDelegate.swift in Sources */,
+				53D0F62420958C7500D67F73 /* CategoryVCTableCell.swift in Sources */,
 				53D0F6212094E98E00D67F73 /* HeadyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +313,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HeadyTestProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Vinit.HeadyTestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -313,6 +330,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HeadyTestProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Vinit.HeadyTestProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
