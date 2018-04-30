@@ -21,12 +21,32 @@ struct Categories : Codable {
 
 struct Rankings : Codable {
     let ranking : String?
-    let products : [Products]?
+    let products : [ProductsRankings]?
 }
 
-struct Products : Codable {
+struct ProductsRankings : Codable {
     let id : Int?
     let view_count : Int?
+}
+
+struct Products : Codable{
+    var id : Int
+    var name: String?
+    var date_added: String?
+    var variants: [Variant]?
+    var tax: Tax?
+}
+
+struct Variant : Codable  {
+    var id: Int?
+    var color: String?
+    var size: Int?
+    var price: Int?
+}
+
+struct Tax : Codable {
+    var name : String?
+    var value : Float?
 }
 
 

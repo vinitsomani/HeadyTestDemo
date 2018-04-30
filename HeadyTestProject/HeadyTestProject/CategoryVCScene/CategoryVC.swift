@@ -11,8 +11,6 @@ import UIKit
 class CategoryVC: UIViewController {
 
     @IBOutlet weak var categoryTable: UITableView!
-    fileprivate var headyViewModel: HeadyViewModel!
-    fileprivate var categories: [Categories]!
     fileprivate var rankings: [Rankings]!
     let cellIdentifier = "tabelCell"
     fileprivate var parentCategories = [Categories]()
@@ -78,7 +76,7 @@ extension CategoryVC: CategoryVCTableCellDelegate{
     func CategoryCellSelectedID(categoryID: Int) {
        let category = HeadyModelFilterClass.sharedFilter.getHeadyCategoryOfID(categoryId: categoryID)
         let subCategoryController = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "SubCategoryVC") as! SubCategoryVC
-        subCategoryController.category = category
+        subCategoryController.setCategory(category: category!)
         self.navigationController?.pushViewController(subCategoryController, animated: true)
     }
     
